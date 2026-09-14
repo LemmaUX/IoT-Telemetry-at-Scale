@@ -1,0 +1,30 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.pulsegrid</groupId>
+    <artifactId>flink-anomaly</artifactId>
+    <version>1.0.0</version>
+    
+    <properties>
+        <flink.version>1.18.1</flink.version>
+        <kafka.version>3.6.1</kafka.version>
+        <protobuf.version>3.25.1</protobuf.version>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-streaming-java</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka</artifactId>
+            <version>3.0.2-1.18</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobuf.version}</version>
+        </dependency>
+    </dependencies>
+</project>
